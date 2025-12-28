@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "story-darugi",
+  "compatibility_date": "2025-12-28",
+  "pages_build_output_dir": "./dist",
+  "compatibility_flags": ["nodejs_compat"],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "webapp-db",
+      "database_id": "15855a50-3fe9-4e94-8c09-83c7489beafc"
+    }
+  ]
+}
