@@ -4,8 +4,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "wrangler pages dev",
+    "preview": "npm run build && wrangler pages dev dist --local --port 3000",
     "deploy": "npm run build && wrangler pages deploy",
+    "db:migrate": "wrangler d1 migrations apply webapp-db --local",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"
   },
   "dependencies": {
